@@ -1,5 +1,5 @@
 ﻿using DataAccess.Interface;
-using Domain.Commonds;
+ 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
@@ -9,11 +9,11 @@ using System.Linq.Expressions;
 
 namespace DataAccess.Repository
 {
-    public class DataAccess<T> : IDataAccess<T> where T : BaseEntities
+    public class DataAccess<T> : IDataAccess<T> where T : class
     {
         private readonly AppHealthContext _appHealthContext;
         private readonly DbSet<T> table;
-        public RepositoryIRepository(AppHealthContext appHealthContext)
+        public DataAccess(AppHealthContext appHealthContext)
         {
 
             _appHealthContext = appHealthContext;

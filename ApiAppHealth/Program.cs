@@ -1,9 +1,11 @@
+using ApiAppHealth.Middlewares;
+using Core.Integration;
+using Core.Interface;
 using Core.Service;
 using DataAccess;
 using DataAccess.Interface;
 using DataAccess.Repository;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 
@@ -20,7 +22,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
  {
 
-     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api AdventureWorks2019", Version = "v1" });
+     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api App Healt", Version = "v1" });
      c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
      {
          Name = "Authorization",
@@ -50,12 +52,21 @@ builder.Services.AddSwaggerGen(c =>
      c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
  });
 builder.Services.AddMediatR(cfg => {
-    cfg.RegisterServicesFromAssemblies(typeof(PersonaAdressHandler).GetTypeInfo().Assembly, typeof(PersonAdressCreateHandler).GetTypeInfo().Assembly);
+    cfg.RegisterServicesFromAssemblies(typeof(CondicionHandler).GetTypeInfo().Assembly, typeof(SintomasHandler).GetTypeInfo().Assembly  );
 });
 
+
+
+builder.Services.AddDbContext<AppHealthContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BdEM"),
+    sqlServerOptionsAction: options =>
+    {
+        options.EnableRetryOnFailure();
+    });
+});
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-
+builder.Services.AddScoped<IInfermedicaIntegration, InfermedicaIntegration>(); 
 builder.Services.AddScoped(typeof(IDataAccess<>), typeof(DataAccess<>));
 
 var app = builder.Build();
@@ -65,7 +76,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseAuthorization();
- 
+app.UseMiddleware<JwtMiddleware>();
 
 app.MapControllers();
 

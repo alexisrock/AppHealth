@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gpt+fyfNuFqqy4o9/9SjsoGfSIN2Lv92pWACE/OqyyLxYuHSSwwP9APQVm+IMPpxFfiAhAGc/2ZR0aTEkVZPRQ==",
+  "dgSpecHash": "SXo8qg51CAe8SisMNpzfYU/aAl6lp6i06iEmIznlHLL7L+Dg62AtfOKR0c91L5S0kH5AxSsULGgubLEcBa5jfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

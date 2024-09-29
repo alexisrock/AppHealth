@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hs0mDbxf5TmgJTxP3Zh3tBXiUVfT5RaY49WGoAODvGTI5+Nt2QILUm0FWOMNqcGeucUwzlWdfOAhG0TsEPC8ag==",
+  "dgSpecHash": "SUfmesy4CU1SJzcrNg+0BB2WoysZxQV70648EAE6LfaveS1fbmCkBhWdcfqV87BOxgciSpoAabNkDFSYEnriPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",

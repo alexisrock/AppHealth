@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\ApiMediator\\ApiAppHealth.csproj": {}
+    "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\ApiAppHealth\\ApiAppHealth.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\ApiMediator\\ApiAppHealth.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\ApiAppHealth\\ApiAppHealth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\ApiMediator\\ApiAppHealth.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\ApiAppHealth\\ApiAppHealth.csproj",
         "projectName": "ApiAppHealth",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\ApiMediator\\ApiAppHealth.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\ApiAppHealth\\ApiAppHealth.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\ApiMediator\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\ApiAppHealth\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Core\\Core.csproj"
+              "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Core\\Core.csproj"
+              },
+              "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -80,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Core\\Core.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Core\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -108,11 +111,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Domain\\Domain.csproj"
+              "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Domain\\Domain.csproj"
               }
             }
           }
@@ -156,14 +159,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -184,8 +187,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Domain\\Domain.csproj"
+              "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Domain\\Domain.csproj"
               }
             }
           }
@@ -233,14 +236,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Domain\\Domain.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

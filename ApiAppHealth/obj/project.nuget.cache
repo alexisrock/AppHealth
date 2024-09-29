@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oEDnw0MZ2o5mw398A3v+K/KgOCI3k08par3wmwHGlNL4CDwptLqrsQ+uD6AKPDKASW4Z1ElGL8nQe5Gwkj/r9Q==",
+  "dgSpecHash": "JohnGqE0v0UMRX/w8iX3x8qnTInEAEsAWine0Mbk7Q4whlhBFnwD5xO7HneMIm4e8/LpQkDbkGfnTFOw+eWcZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\EjemploMediator\\ApiMediator\\ApiAppHealth.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\Proyectos\\Net\\AppHealth\\ApiAppHealth\\ApiAppHealth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",

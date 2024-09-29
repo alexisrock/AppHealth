@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "5tdAVYi7HJha025YWuxQ9iLAjZeWCMF8DvMNMlAd2Y0=",
-  "Source": "ApiMediator",
-  "BasePath": "_content/ApiMediator",
+  "Hash": "PhlvAeI2EMgVHrPRn3xScFd0yFWN5xhPU7lIW8JCZgg=",
+  "Source": "ApiAppHealth",
+  "BasePath": "_content/ApiAppHealth",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
