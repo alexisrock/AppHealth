@@ -13,5 +13,7 @@ namespace DataAccess
         public AppHealthContext(DbContextOptions<AppHealthContext> options) : base(options) { }   
         public virtual DbSet<Settings>? Settings { get; set; }
         public virtual DbSet<Users>? Users { get; set; }
+        public virtual DbSet<Symptoms>? Symptoms { get; set; }
+
     }
 }

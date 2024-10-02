@@ -74,6 +74,13 @@ namespace DataAccess.Repository
             await Save();
         }
 
+        public async Task InsertReange(T[] obj)
+        {
+            await table.AddRangeAsync(obj);
+            await Save();
+        }
+
+
         public async Task Save()
         {
             await _appHealthContext.SaveChangesAsync();

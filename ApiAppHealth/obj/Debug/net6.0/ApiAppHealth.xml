@@ -39,6 +39,11 @@
             Metodo de obtener cualquier condicionar que pueda tener la persona   
             </summary>
         </member>
+        <member name="M:ApiAppHealth.Controllers.SintomasController.CreateSintomas(Domain.Dtos.Request.SintomasUsuario)">
+            <summary>
+            Metodo para que el usuario guarde todos sus simtomas 
+            </summary>
+        </member>
         <member name="T:ApiAppHealth.Controllers.UsuarioController">
             <summary>
             Controlador de Condicion
