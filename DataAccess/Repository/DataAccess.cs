@@ -25,7 +25,11 @@ namespace DataAccess.Repository
         {
             throw new NotImplementedException();
         }
-
+        public async Task DeleteRange(T[] obj)
+        {
+            table.RemoveRange(obj);
+            await Save();
+        }
         public async Task<List<T>> GetAll()
         {
             return await table.ToListAsync();
@@ -74,7 +78,7 @@ namespace DataAccess.Repository
             await Save();
         }
 
-        public async Task InsertReange(T[] obj)
+        public async Task InsertRange(T[] obj)
         {
             await table.AddRangeAsync(obj);
             await Save();

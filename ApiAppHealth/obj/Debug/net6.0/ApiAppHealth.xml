@@ -44,6 +44,11 @@
             Metodo para que el usuario guarde todos sus simtomas 
             </summary>
         </member>
+        <member name="M:ApiAppHealth.Controllers.SintomasController.DeleteSintomas(System.Int32)">
+            <summary>
+            Metodo para que el usuario guarde todos sus simtomas 
+            </summary>
+        </member>
         <member name="T:ApiAppHealth.Controllers.UsuarioController">
             <summary>
             Controlador de Condicion

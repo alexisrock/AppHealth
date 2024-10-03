@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiAppHealth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c26ed9a6e4db3d376e17311fff34336bc6b89621")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8099eba5e9f14000a849de6906a688f4c2b42eda")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiAppHealth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiAppHealth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

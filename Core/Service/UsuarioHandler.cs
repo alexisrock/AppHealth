@@ -39,7 +39,7 @@ namespace Core.Service
             }
             catch (Exception ex)
             {
-                response = MapperBaseRespone(500, ex.Message);
+                response = BaseResponseMapper.MapperBaseRespone(500, ex.Message);
             }
 
             return response;
@@ -52,18 +52,18 @@ namespace Core.Service
             {
                 if (request is null || string.IsNullOrEmpty(request.Contrasena))
                 {
-                    response = MapperBaseRespone(400, "Campos incompletos");
+                    response = BaseResponseMapper.MapperBaseRespone(400, "Campos incompletos");
                     return response;
                 }
 
                 var user = maper.Map<Users>(request);
                 user.Contrasena = await EncryptedPassword(request.Contrasena ?? string.Empty);
                 await usersAccess.Insert(user);
-                response = MapperBaseRespone(200, "Usuario creado con exito");
+                response = BaseResponseMapper.MapperBaseRespone(200, "Usuario creado con exito");
             }
             catch (Exception ex)
             {
-                response = MapperBaseRespone(500, ex.Message);
+                response = BaseResponseMapper.MapperBaseRespone(500, ex.Message);
             }
             return response;
 
@@ -85,15 +85,6 @@ namespace Core.Service
             }
         }
 
-        private BaseResponse MapperBaseRespone(int status, string message)
-        {
-            return new BaseResponse()
-            {
-                statusCode = status,
-                message = message
-            };
-        }
-
         private async Task<BaseResponse> Update(UsuarioAuthenticationRequest request)
         {
             BaseResponse response;
@@ -101,16 +92,16 @@ namespace Core.Service
             {
                 if (request is null || request.Id == 0 || string.IsNullOrEmpty(request.Contrasena))
                 {
-                    response = MapperBaseRespone(400, "Campos incompletos");
+                    response = BaseResponseMapper.MapperBaseRespone(400, "Campos incompletos");
                     return response;
                 }
                 var user = await GetUser(request);
                 await usersAccess.Update(user);
-                response = MapperBaseRespone(200, "Usuario actualizado con exito");
+                response = BaseResponseMapper.MapperBaseRespone(200, "Usuario actualizado con exito");
             }
             catch (Exception ex)
             {
-                response = MapperBaseRespone(500, ex.Message);
+                response = BaseResponseMapper.MapperBaseRespone(500, ex.Message);
             }
             return response;
         }

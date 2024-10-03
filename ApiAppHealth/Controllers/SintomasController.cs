@@ -83,6 +83,35 @@ namespace ApiAppHealth.Controllers
         }
 
 
+        /// <summary>
+        /// Metodo para que el usuario guarde todos sus simtomas 
+        /// </summary>
+        [HttpDelete, Route("[action]/{idUsuario}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+
+        public async Task<ActionResult> DeleteSintomas(int idUsuario)
+        {
+            try
+            {
+                var response = await _sender.Send(new SintomasIdUsuario() {
+                    IdUsuario = idUsuario
+                });
+
+                if (response.statusCode == 200)
+                    return Ok(response);
+
+                return BadRequest(response);
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+        }
+
+
+
 
 
 

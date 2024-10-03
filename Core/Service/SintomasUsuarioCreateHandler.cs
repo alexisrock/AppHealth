@@ -25,12 +25,12 @@ namespace Core.Service
             try
             {
                 var simtomas = MapperSymptomsArray(request);
-                await symptomsAccess.InsertReange(simtomas);
-                response = MapperBaseRespone(200, "Sintomas ingresados con exito");
+                await symptomsAccess.InsertRange(simtomas);
+                response = BaseResponseMapper.MapperBaseRespone(200, "Sintomas ingresados con exito");
             }
             catch (Exception ex)
             {
-                response = MapperBaseRespone(500, ex.Message);
+                response = BaseResponseMapper.MapperBaseRespone(500, ex.Message);
             }
 
             return response;
@@ -53,14 +53,7 @@ namespace Core.Service
             return sintomas;
         }
 
-        private BaseResponse MapperBaseRespone(int status, string message)
-        {
-            return new BaseResponse()
-            {
-                statusCode = status,
-                message = message
-            };
-        }
+    
 
     }
 }
