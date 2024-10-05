@@ -1,5 +1,6 @@
 ﻿using Core.Interface;
 using DataAccess.Interface;
+using Domain.Dtos.Request;
 using Domain.Dtos.Response;
 using Domain.Entities;
 using System.Text.Json;
@@ -22,7 +23,7 @@ namespace Core.Integration
           
             if (response is not null && response.StatusCode == System.Net.HttpStatusCode.OK )
             {
-                conditionResponse.conditions = await JsonSerializer.DeserializeAsync<List<Conditions>>(await response.Content.ReadAsStreamAsync());               
+                conditionResponse.conditions = await JsonSerializer.DeserializeAsync<List<ConditionResponse>>(await response.Content.ReadAsStreamAsync());               
             }
            
             conditionResponse.statusCode = (int) response!.StatusCode;
@@ -43,6 +44,25 @@ namespace Core.Integration
 
             sintomasResponse.statusCode = (int)response!.StatusCode;
             return sintomasResponse;
+        }
+
+
+        public async Task<DiagnosisResponse> Diagnostico(DiagnosisRequest request)
+        {
+            var diagnosticResponse = new DiagnosisResponse();
+            string url = "https://api.infermedica.com/v3/diagnosis";
+
+            var response = await ExecPostAsync(url, request);
+
+
+            if (response is not null && response.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                diagnosticResponse = await JsonSerializer.DeserializeAsync<DiagnosisResponse>(await response.Content.ReadAsStreamAsync());
+               
+            }
+
+            diagnosticResponse!.statusCode = (int)response!.StatusCode;
+            return diagnosticResponse;
         }
 
 

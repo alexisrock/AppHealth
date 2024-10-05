@@ -84,7 +84,7 @@ namespace ApiAppHealth.Controllers
 
 
         /// <summary>
-        /// Metodo para que el usuario guarde todos sus simtomas 
+        /// Metodo para que el usuario elimine todos sus simtomas 
         /// </summary>
         [HttpDelete, Route("[action]/{idUsuario}")]
         [ProducesResponseType(StatusCodes.Status200OK)]

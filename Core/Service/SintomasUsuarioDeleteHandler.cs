@@ -1,14 +1,9 @@
 ﻿using DataAccess.Interface;
 using Domain.Commonds;
-using Domain.Dtos.Request;
-using Domain.Dtos.Response;
+using Domain.Dtos.Request; 
 using Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+ 
 
 namespace Core.Service
 {

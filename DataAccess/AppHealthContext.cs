@@ -14,6 +14,6 @@ namespace DataAccess
         public virtual DbSet<Settings>? Settings { get; set; }
         public virtual DbSet<Users>? Users { get; set; }
         public virtual DbSet<Symptoms>? Symptoms { get; set; }
-
+        public virtual DbSet<Conditions>? Conditions { get; set; }
     }
 }

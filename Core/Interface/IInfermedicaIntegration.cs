@@ -1,4 +1,5 @@
-﻿using Domain.Dtos.Response;
+﻿using Domain.Dtos.Request;
+using Domain.Dtos.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace Core.Interface
     {
         public Task<ConditionsResponse> Condiciones(int edad);
         public Task<SintomasResponse> Sintomas(int edad);
+        public Task<DiagnosisResponse> Diagnostico(DiagnosisRequest request);
     }
 }

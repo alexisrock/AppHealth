@@ -4,11 +4,11 @@
 namespace Domain.Dtos.Response;
 public class ConditionsResponse: BaseResponse
 {
-    public List<Conditions>? conditions { get; set; }
+    public List<ConditionResponse>? conditions { get; set; }
 
 }
 
-public class Conditions
+public class ConditionResponse
 {
 
     public string id { get; set; } = string.Empty;
@@ -26,7 +26,7 @@ public class Conditions
 }
 
 
-public class Extras
+public class  Extras 
 {
     public string icd10_code { get; set; } = string.Empty;
     public string hint { get; set; } = string.Empty;

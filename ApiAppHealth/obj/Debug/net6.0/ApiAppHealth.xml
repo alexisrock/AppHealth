@@ -24,6 +24,17 @@
             Metodo de crear el usuario     
             </summary>
         </member>
+        <member name="T:ApiAppHealth.Controllers.DiagnosticoController">
+            <summary>
+            Controlador de diagnostico
+            </summary>
+        </member>
+        <member name="M:ApiAppHealth.Controllers.DiagnosticoController.#ctor(MediatR.ISender)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ApiAppHealth.Controllers.DiagnosticoController.Diagnosticar(Domain.Dtos.Request.DiagnosisRequest)" -->
         <member name="T:ApiAppHealth.Controllers.SintomasController">
             <summary>
             Controlador de Sintomas
@@ -46,7 +57,7 @@
         </member>
         <member name="M:ApiAppHealth.Controllers.SintomasController.DeleteSintomas(System.Int32)">
             <summary>
-            Metodo para que el usuario guarde todos sus simtomas 
+            Metodo para que el usuario elimine todos sus simtomas 
             </summary>
         </member>
         <member name="T:ApiAppHealth.Controllers.UsuarioController">
@@ -107,6 +118,16 @@
         <member name="M:ApiMediator.Controllers.CondicionController.GetCondiciones(System.Int32)">
             <summary>
             Metodo de obtener todos los sintomas      
+            </summary>
+        </member>
+        <member name="M:ApiMediator.Controllers.CondicionController.CreateCondiciones(Domain.Dtos.Request.ConditionsUsuario)">
+            <summary>
+            Metodo para que el usuario guarde todas sus condiciones medicas
+            </summary>
+        </member>
+        <member name="M:ApiMediator.Controllers.CondicionController.Delete(System.Int32)">
+            <summary>
+            Metodo para que el usuario elimine todas sus condiciones medicas 
             </summary>
         </member>
     </members>
