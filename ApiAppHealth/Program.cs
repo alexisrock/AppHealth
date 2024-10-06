@@ -18,7 +18,7 @@ builder.Services.AddControllers()
 
 builder.Services.AddEndpointsApiExplorer();
 
-
+builder.WebHost.UseUrls("http://*:8089");
 builder.Services.AddSwaggerGen(c =>
  {
 
@@ -54,7 +54,15 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddMediatR(cfg => {
     cfg.RegisterServicesFromAssemblies(typeof(CondicionHandler).GetTypeInfo().Assembly, typeof(SintomasHandler).GetTypeInfo().Assembly  );
 });
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularClient", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")  // Aquí permites el acceso desde tu frontend Angular
+              .AllowAnyHeader()                      // Permite cualquier encabezado
+              .AllowAnyMethod();                     // Permite cualquier método (GET, POST, PUT, DELETE, etc.)
+    });
+});
 
 
 builder.Services.AddDbContext<AppHealthContext>(options =>
@@ -71,7 +79,7 @@ builder.Services.AddScoped(typeof(IDataAccess<>), typeof(DataAccess<>));
 
 var app = builder.Build();
 
-
+app.UseCors("AllowAngularClient");
 app.UseSwagger();
 app.UseSwaggerUI();
 
